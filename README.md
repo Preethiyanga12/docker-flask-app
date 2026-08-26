@@ -1,12 +1,34 @@
-# docker-flask-app
-Dockerized Flask Web Application
-from flask import Flask
+# Cloud & DevOps Capstone Project
 
-app = Flask(__name__)
+A Dockerized Flask Web Application built as part of a Cloud & DevOps Capstone Project.
 
-@app.route("/")
-def home():
-    return "Hello! Flask app is running inside Docker."
+## Technologies Used
 
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000)
+- Python
+- Flask
+- Docker
+- Docker Compose
+- GitHub
+
+## Application Features
+
+- Flask web application
+- Health check endpoint
+- Docker containerization
+- Docker Compose configuration
+
+## Endpoints
+
+- `/` - Home page
+- `/health` - Application health check
+
+## Project Structure
+
+```text
+docker-flask-app/
+├── app.py
+├── requirements.txt
+├── Dockerfile
+├── docker-compose.yml
+├── .gitignore
+└── README.md
